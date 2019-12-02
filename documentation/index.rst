@@ -23,7 +23,9 @@
    :titlesonly:
    :numbered:
 
-   hardware/ebf6ulls1
+   board/ebf6ulls1
+   board/ebf6ulls1_pro
+   board/ebf6ulls1_mini
 
 
 .. toctree::
