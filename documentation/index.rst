@@ -18,7 +18,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 硬件资料
+   :caption: 开发板数据手册
    :titlesonly:
    :numbered:
 
@@ -26,6 +26,14 @@
    board/ebf6ulls1_pro
    board/ebf6ulls1_mini
 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 芯片手册
+   :titlesonly:
+   :numbered:
+
+   chip/chip_datasheet
 
 .. toctree::
    :maxdepth: 2
