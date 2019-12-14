@@ -14,8 +14,7 @@
 
    README
    about_us
-   contribute/quick-contribute
-   TODO
+
 
 .. toctree::
    :maxdepth: 2
@@ -33,6 +32,13 @@
    :caption: 常见问题
 
    faq/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: 参与贡献
+
+   contribute/quick-contribute
+   TODO
 
 .. toctree::
    :maxdepth: 1

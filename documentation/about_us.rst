@@ -28,6 +28,13 @@
 - 邮箱： embedfire@embedfire.com
 - 电话： 0769-33894118
 
+关注野火公众号，可免费获取野火全部产品的资料。
+
+.. image:: media/imx6s1009.jpeg
+   :align: center
+
+
+
 
 
 
