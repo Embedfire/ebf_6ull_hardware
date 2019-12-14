@@ -17,9 +17,8 @@
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 开发板数据手册
-   :titlesonly:
    :numbered:
 
    board/ebf6ulls1
@@ -28,9 +27,8 @@
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 芯片手册
-   :titlesonly:
    :numbered:
 
    chip/chip_datasheet
