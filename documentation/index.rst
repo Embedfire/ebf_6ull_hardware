@@ -21,8 +21,8 @@
    :caption: 开发板数据手册
    :numbered:
 
-   board/ebf6ulls1
-   board/ebf6ulls1_pro
+   board/ebf6ull
+   board/ebf6ull_pro
    board/ebf6ulls1_mini
 
 

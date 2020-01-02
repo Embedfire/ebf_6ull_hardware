@@ -1,10 +1,10 @@
 .. vim: syntax=rst
 
 
-EBF6ULL S1核心板硬件数据手册
+EBF6ULL 核心板硬件数据手册
 ==========================================
 
-
+可直接点击页面右上角的“Edit on github”到github下载整个仓库，仓库中包含以下所有硬件资料。
 
 资料下载
 ------------------------
@@ -20,10 +20,30 @@ EBF6ULL S1核心板硬件数据手册
 ============  ====================
 
 
+============  ====================
+内容            下载链接
+============  ====================
+硬件原理图     :download:`野火_EBF6ULL B1 核心板_原理图.pdf <../../hardware/EBF6ULL B1/野火_EBF6ULL B1 核心板_原理图.pdf>`
+机械尺寸图     :download:`野火_EBF6ULL B1 核心板_机械尺寸.pdf <../../hardware/EBF6ULL B1/野火_EBF6ULL B1 核心板_机械尺寸.pdf>`
+装配图         :download:`野火_EBF6ULL B1 核心板_装配图.pdf <../../hardware/EBF6ULL B1/野火_EBF6ULL B1 核心板_装配图.pdf>`
+封装库         :download:`野火_EBF6ULL B1 核心板_封装库.zip <../../hardware/EBF6ULL B1/封装库.zip>`
+============  ====================
+
+============  ====================
+内容            下载链接
+============  ====================
+硬件原理图     :download:`野火_EBF6ULL F1 核心板_原理图.pdf <../../hardware/EBF6ULL F1/野火_EBF6ULL F1 核心板_原理图.pdf>`
+机械尺寸图     :download:`野火_EBF6ULL F1 核心板_机械尺寸.pdf <../../hardware/EBF6ULL F1/野火_EBF6ULL F1 核心板_机械尺寸.pdf>`
+装配图         :download:`野火_EBF6ULL F1 核心板_装配图.pdf <../../hardware/EBF6ULL F1/野火_EBF6ULL F1 核心板_装配图.pdf>`
+封装库         :download:`野火_EBF6ULL F1 核心板_封装库.zip <../../hardware/EBF6ULL F1/封装库.zip>`
+============  ====================
+
 简介
 --------------
-EBF6ULL S1 邮票孔核心板是野火电子基于NXP i.MX6ULL系列处理器设计的一款低功耗、 高性能的嵌入式SOM，
-具体实物如下图。MPU主频高达 800MHz（实际为792MHZ），标配512MB内存，存储有512MB NAND和8GB eMMC两种选择。
+EBF6ULL 核心板是野火电子基于NXP i.MX6ULL系列处理器设计的一款低功耗、 高性能的嵌入式SOM，
+具体实物如下图。根据外观封装分为邮票孔核心板、BTB接口核心板及金手指接口核心板。
+
+MPU主频高达 800MHz（实际为792MHZ），标配512MB内存，存储有512MB NAND和8GB eMMC两种选择。
 
 
 .. image:: media/imx6s1002.jpeg

@@ -6,7 +6,7 @@
 本项目包含野火EBF6ULL S1、Pro及Mini板子的硬件资料，
 包括原理图、机械尺寸、装配图、封装库、引脚分配表等。
 
-** 在以下仓库地址可直接打包下载整个项目的硬件资料** ：
+**在以下仓库地址可直接打包下载整个项目的硬件资料** ：
 
 本项目的github地址：https://github.com/Embdefire/ebf_6ull_hardware
 
