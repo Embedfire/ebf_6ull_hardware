@@ -1,0 +1,73 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\野火_ebf6ull s1 mini 底板_v1.0_原理图封装_orcad格式.olb"
+      (Type "Schematic Library"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         ".\野火_ebf6ull s1 mini 底板_v1.0_原理图封装_orcad格式.olb")
+      (Select "Design Resources"
+         ".\野火_ebf6ull s1 mini 底板_v1.0_原理图封装_orcad格式.olb"
+         "MODULE_LCD_3"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 441"))
+      (Tab 0))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1665 50 529")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "5734 1537")
+        (Zoom "831"))
+      (Path
+         "E:\原理图PCB__赵中磊\CADENCE\EBF——IMX6ULL系列\EBF6ULL S1\最终文件\EBF6ULL S1 MINI\封装库\CADENCE格式\野火_EBF6ULL S1 MINI 底板_V1.0_原理图封装_ORCAD格式.OLB")
+      (Package "12MHz_1"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1765 150 629")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "514 112")
+        (Zoom "172"))
+      (Path
+         "E:\原理图PCB__赵中磊\CADENCE\EBF——IMX6ULL系列\EBF6ULL S1\最终文件\EBF6ULL S1 MINI\封装库\CADENCE格式\野火_EBF6ULL S1 MINI 底板_V1.0_原理图封装_ORCAD格式.OLB")
+      (Package "MODULE_LCD_1"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1790 175 654")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "0 42")
+        (Zoom "90"))
+      (Path
+         "E:\原理图PCB__赵中磊\CADENCE\EBF——IMX6ULL系列\EBF6ULL S1\最终文件\EBF6ULL S1 MINI\封装库\CADENCE格式\野火_EBF6ULL S1 MINI 底板_V1.0_原理图封装_ORCAD格式.OLB")
+      (Package "MODULE_LCD_0"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 200 1815 200 679")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "479 0")
+        (Zoom "174"))
+      (Path
+         "E:\原理图PCB__赵中磊\CADENCE\EBF——IMX6ULL系列\EBF6ULL S1\最终文件\EBF6ULL S1 MINI\封装库\CADENCE格式\野火_EBF6ULL S1 MINI 底板_V1.0_原理图封装_ORCAD格式.OLB")
+      (Package "MODULE_LCD_3"))))
