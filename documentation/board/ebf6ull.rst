@@ -16,7 +16,7 @@ EBF6ULL 核心板硬件数据手册
 内容            下载链接
 ============  ====================
 参考设计       :download:`[应用文档]野火i.MX 6ULL 核心板底板电源参考设计.pdf <../../hardware/[应用文档]野火i.MX 6ULL 核心板底板电源参考设计.pdf>`
-引脚分配表     :download:`野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx <../../hardware/EBF6ULL S1/野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx>`
+引脚分配表     :download:`野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx <../../hardware/野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx>`
 硬件原理图     :download:`野火_EBF6ULL S1 邮票孔核心板_V1.0_原理图.pdf <../../hardware/EBF6ULL S1/野火_EBF6ULL S1 邮票孔核心板_V1.0_原理图.pdf>`
 机械尺寸图     :download:`野火_EBF6ULL S1 邮票孔核心板_V1.0_机械尺寸.pdf <../../hardware/EBF6ULL S1/野火_EBF6ULL S1 邮票孔核心板_V1.0_机械尺寸.pdf>`
 装配图         :download:`野火_EBF6ULL S1 邮票孔核心板_V1.0_装配图.pdf <../../hardware/EBF6ULL S1/野火_EBF6ULL S1 邮票孔核心板_V1.0_装配图.pdf>`
@@ -31,7 +31,7 @@ EBF6ULL 核心板硬件数据手册
 硬件原理图     :download:`野火_EBF6ULL B1 核心板_原理图.pdf <../../hardware/EBF6ULL B1/野火_EBF6ULL B1 核心板_原理图.pdf>`
 机械尺寸图     :download:`野火_EBF6ULL B1 核心板_机械尺寸.pdf <../../hardware/EBF6ULL B1/野火_EBF6ULL B1 核心板_机械尺寸.pdf>`
 装配图         :download:`野火_EBF6ULL B1 核心板_装配图.pdf <../../hardware/EBF6ULL B1/野火_EBF6ULL B1 核心板_装配图.pdf>`
-封装库         :download:`野火_EBF6ULL B1 核心板_封装库.zip <../../hardware/EBF6ULL B1/封装库.zip>`
+封装库         :download:`野火_EBF6ULL B1 核心板_封装库.zip <../../hardware/EBF6ULL B1/封装库/封装库.zip>`
 ============  ====================
 
 **金手指核心板**：
@@ -42,7 +42,7 @@ EBF6ULL 核心板硬件数据手册
 硬件原理图     :download:`野火_EBF6ULL F1 核心板_原理图.pdf <../../hardware/EBF6ULL F1/野火_EBF6ULL F1 核心板_原理图.pdf>`
 机械尺寸图     :download:`野火_EBF6ULL F1 核心板_机械尺寸.pdf <../../hardware/EBF6ULL F1/野火_EBF6ULL F1 核心板_机械尺寸.pdf>`
 装配图         :download:`野火_EBF6ULL F1 核心板_装配图.pdf <../../hardware/EBF6ULL F1/野火_EBF6ULL F1 核心板_装配图.pdf>`
-封装库         :download:`野火_EBF6ULL F1 核心板_封装库.zip <../../hardware/EBF6ULL F1/封装库.zip>`
+封装库         :download:`野火_EBF6ULL F1 核心板_封装库.zip <../../hardware/EBF6ULL F1/封装库/封装库.zip>`
 ============  ====================
 
 简介

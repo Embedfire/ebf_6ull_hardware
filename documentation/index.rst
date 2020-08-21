@@ -34,6 +34,14 @@
    chip/chip_datasheet
 
 .. toctree::
+   :maxdepth: 1
+   :caption: 相关主要手册
+   :numbered:
+
+   chip/reference_manual
+
+
+.. toctree::
    :maxdepth: 2
    :caption: 常见问题
 

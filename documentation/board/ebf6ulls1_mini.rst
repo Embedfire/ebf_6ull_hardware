@@ -16,10 +16,8 @@ EBF6ULL S1 mini底板数据手册
 =======================  ====================
 硬件原理图                 :download:`野火_EBF6ULL S1 Mini 底板_V1.0_原理图.pdf <../../hardware/EBF6ULL S1 Mini/野火_EBF6ULL S1 Mini 底板_V1.0_原理图.pdf>`
 机械尺寸图                 :download:`野火_EBF6ULL S1 Mini 底板_V1.0_机械尺寸.pdf <../../hardware/EBF6ULL S1 Mini/野火_EBF6ULL S1 Mini 底板_V1.0_机械尺寸.pdf>`
-机械尺寸图（CAD版本）       :download:`野火_EBF6ULL S1 Mini 底板_V1.0_机械尺寸.pdf <../../hardware/EBF6ULL S1 Mini/野火_EBF6ULL S1 Mini 底板_V1.0_机械尺寸.pdf>`
 装配图                     :download:`野火_EBF6ULL S1 Mini 底板_V1.0_装配图.pdf <../../hardware/EBF6ULL S1 Mini/野火_EBF6ULL S1 Mini 底板_V1.0_装配图.pdf>`
-底板机械尺寸_CAD图.dxf      :download:`野火_EBF6ULL S1 Mini 底板_V1.0_机械尺寸_CAD图.dxf <../../hardware/EBF6ULL S1 Mini/野火_EBF6ULL S1 Mini 底板_V1.0_机械尺寸_CAD图.dxf>`
-封装库                     待添加
+封装库                     :download:`野火_EBF6ULL S1 Mini 底板_V1.0_装配图.pdf <../../hardware/EBF6ULL S1 Mini/封装库/封装库.rar>`
 =======================  ====================
 
 产品概述
