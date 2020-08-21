@@ -1,0 +1,195 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Fri Nov 15 14:56:02 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: C:/Users/Administrator/Desktop/1/EBF_L005_29.brd ***
+
+
+
+  *** Creating all device files (see create_devices.log) ***
+
+
+  *** Creating padstacks. ***
+
+  S_R0R25X0R30 being dumped.
+
+  PAD1R6X1R8OB0R9DMM being dumped.
+
+  SMD1R1X1R1MM being dumped.
+
+  SMD0R4X1R1MM being dumped.
+
+  PAD1R6X1R8RE0R9DMM being dumped.
+
+  SMD0R3X1R3MM being dumped.
+
+  SMD1R4X1R2MM being dumped.
+
+  SMD0R6X1R2MM being dumped.
+
+  SMD2R3X0R4MM being dumped.
+
+  SMD0R3X1R6MM being dumped.
+
+  SMD2R5X2R5MM being dumped.
+
+  SMD3R4X4R3MM being dumped.
+
+  S_R200_35_M200_35_P200_35 being dumped.
+
+  SMD1R5X3R7MM being dumped.
+
+  SMD0R8X1R8MM being dumped.
+
+  C015SXP being dumped.
+
+  PAD1R2C0R8DMM being dumped.
+
+  PAD0R64X0R5MM being dumped.
+
+  R018X100SXP_B being dumped.
+
+  SMD1R3X0R35MM being dumped.
+
+  SMD0R46X0R5MM being dumped.
+
+  SMD0R9X1R27MM being dumped.
+
+  PAD1R3_2RE0R5_1R2OB being dumped.
+
+  SMD54X10 being dumped.
+
+  SMD20_40 being dumped.
+
+  SMDS0R8X0R8MM being dumped.
+
+  SMD44_80 being dumped.
+
+  SMD0R91X0R91MM being dumped.
+
+  SMD1R16X1R47MM being dumped.
+
+  SMD1R65X0R64MM being dumped.
+
+  ID-BOARD being dumped.
+
+  VIA8_14F being dumped.
+
+  VIA8_16F being dumped.
+
+  SMD0R93X0R98MM being dumped.
+
+  SMD2X3MM being dumped.
+
+  NPAD35R43 being dumped.
+
+  SMD0R3X1R7OBMM being dumped.
+
+  S_R459_350_M459_350_P459_35 being dumped.
+
+  SMD1R7X0R6OBMM being dumped.
+
+  VIA16_30F being dumped.
+
+  PAD4C3DMM being dumped.
+
+  PAD2X0R6C0R5DMM being dumped.
+
+  PAD_SQ200_120MM being dumped.
+
+  BALL0R3MM being dumped.
+
+  NPAD1R3MM being dumped.
+
+  SMD180_180 being dumped.
+
+  NPAD0R6MM being dumped.
+
+  SMDS0R89X0R89MM being dumped.
+
+  SMD54X10OB being dumped.
+
+  SMD10_32OB being dumped.
+
+  ID-BOARD-44 being dumped.
+
+  C010S being dumped.
+
+  C012S being dumped.
+
+  SMD0R3X1MM being dumped.
+
+  SMD1X0R3MM being dumped.
+
+  C014S being dumped.
+
+  SMD0R4X2MM being dumped.
+
+  SMD1R6X1MM being dumped.
+
+  SMD1R8X1MM being dumped.
+
+  R018X100SXP being dumped.
+
+  PAD4C2P5DMM being dumped.
+
+  H_C110 being dumped.
+
+  H_C160 being dumped.
+
+
+  *** Creating package symbols (.dra and .psm) ***
+
+  fbga153_0p5_11p5x13 being dumped.
+
+  led0603 being dumped.
+
+  sot23-5 being dumped.
+
+  tsop48-050-1220 being dumped.
+
+  bga96_0p8_8p15x14p15 being dumped.
+
+  tsot-23-5 being dumped.
+
+  ddr3-sodimm204-gold_finger being dumped.
+
+  3215 being dumped.
+
+  3225 being dumped.
+
+  bga289_0p8_14x14 being dumped.
+
+  gxd-small being dumped.
+
+  c0402 being dumped.
+
+  c0603 being dumped.
+
+  l2520 being dumped.
+
+  r0402 being dumped.
+
+  sot23 being dumped.
+
+  t2_5-4 being dumped.
+
+  sod523 being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:               63
+Number of package symbols dumped:         18
+
+Total number of symbols dumped:           18
+*****************************************************
+

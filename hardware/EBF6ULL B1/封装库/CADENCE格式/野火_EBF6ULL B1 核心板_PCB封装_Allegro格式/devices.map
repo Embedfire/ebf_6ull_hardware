@@ -1,0 +1,14 @@
+'CAP_NP_C0402_DISCRETE_2.2PF' 'cap_np_c0402_discrete_22pf.txt';
+'RES_5_R0402_DISCRETE_10K_5%' 'res_5_r0402_discrete_10k_5.txt';
+'RES_R0402_DISCRETE_2.2M' 'res_r0402_discrete_22m.txt';
+'CAP_NP_C0402_DISCRETE_0.1UF' 'cap_np_c0402_discrete_01uf.txt';
+'CAP_NP_C0402_DISCRETE_NC/820PF' 'cap_np_c0402_discrete_nc820pf.txt';
+'CRYSTAL_3215_IC_32.768KHZ' 'crystal_3215_ic_32768khz.txt';
+'CAP_NP_C0402_DISCRETE_4.7UF' 'cap_np_c0402_discrete_47uf.txt';
+'CAP_NP_C0402_DISCRETE_NC/2.2PF' 'cap_np_c0402_discrete_nc22pf.txt';
+'RES_5_R0402_DISCRETE_NC/10K_5%' 'res_5_r0402_discrete_nc10k_5.txt';
+'RES_5_R0402_DISCRETE_1.5K' 'res_5_r0402_discrete_15k.txt';
+'CAP_NP_C0402_DISCRETE_0.22UF' 'cap_np_c0402_discrete_022uf.txt';
+'RES_5_R0402_DISCRETE_3.4K' 'res_5_r0402_discrete_34k.txt';
+'INDUCTOR_L2520_DISCRETE_2.2UH' 'inductor_l2520_discrete_22uh.txt';
+'SPACER_0_T2_5-4_IC_2.0MM' 'spacer_0_t2_5-4_ic_20mm.txt';

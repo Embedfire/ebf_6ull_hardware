@@ -1,0 +1,63 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Create_devices LOG file                                          )
+(                                                                     )
+(    Drawing          : 22.brd                                        )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Fri Nov 15 11:41:10 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/b2bf_2x40_a_b2bf-2x40-0p8_b2bf-.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/diode_schtky_0_sod523_ic_1n5819.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_68pf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_34k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/rt8096chgj5_tsot-23-5_rt8096chg.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/rt9166-18gvl_sot23_rt9166-18gvl.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/sy6280aac_sot23-5_mt9700.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/spacer_0_t2_5-4_ic_20mm.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/led_0_led0603_ic_red.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/led_0_led0603_ic_blue.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_r0402_discrete_1k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_022uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0603_discrete_10uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_01uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_47uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_1uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0603_discrete_22uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0603_discrete_47uf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_18pf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_nc.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_nc820pf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_nc22pf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/cap_np_c0402_discrete_22pf.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/diode_schtky_0_sod523_ic_rb521s.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/inductor_l2520_discrete_22uh.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/mosfet_p_sot23_ic_ssm3j328r.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_30k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_0r.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_r0402_discrete_22m.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_r0402_discrete_10.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_10r.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_240r.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_470r.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_15k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_24k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_nc10k_5.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/testloop_tpad_015_io_tpad_015.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/mcimx6y2dvm05aa_pbga_289p_bga28.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/mt41j256m16re_fbga96_bga96_0p8_.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/mtfc4gmvea_wfbga_153p_fbga153_0.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/mt29f32g08cbadb_48p_tsop48-050-.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/crystal_jxs63_3225_ic_24mhz.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_1k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_10k_5.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_r0402_discrete_0.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_nc.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/res_5_r0402_discrete_10k.txt': written successfully.
+Device file 'E:/原理图PCB__赵中磊/CADENCE/imx6ull/EBF6ULL B1/最终文件/EBF6ULL B1/封装库/CADENCE格式/PCB/crystal_3215_ic_32768khz.txt': written successfully.
+
+  Created device files: 48
+
