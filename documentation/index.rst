@@ -38,7 +38,7 @@
    :caption: 相关主要手册
    :numbered:
 
-   chip/reference_manual
+   manual/reference_manual
 
 
 .. toctree::
