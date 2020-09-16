@@ -24,6 +24,7 @@
    board/ebf6ull
    board/ebf6ull_pro
    board/ebf6ulls1_mini
+   board/ebf6ull_pin_tool
 
 
 .. toctree::
