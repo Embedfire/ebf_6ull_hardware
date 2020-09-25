@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="MCIMX6ULL-EVK-REV-A" version="1.3" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.3 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.3.xsd" uuid="ab0960ce-d81d-42b3-a981-ca104309f0fa" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MCIMX6Y2xxx08</processor>
+      <package>MCIMX6Y2CVM08</package>
+      <board></board>
+      <board_revision>A</board_revision>
+      <mcu_data>i_mx_2_0</mcu_data>
+      <cores selected="ca7">
+         <core name="Cortex-A7" id="ca7" description="A7 core"/>
+      </cores>
+      <description></description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="4.0" update_project_code="true">
+         <pins_profile>
+            <processor_version>3.0.0</processor_version>
+            <power_domains/>
+            <pin_labels>
+               <pin_label pin_num="T10" pin_signal="BOOT_MODE0" label="GPIO_SPI4_MOSI" identifier="BOOT_MODE0;SHIFT_SDI"/>
+               <pin_label pin_num="U10" pin_signal="BOOT_MODE1" label="SW4_MODE_GPIO_SPI4_MOSI" identifier="BOOT_MODE1;SHIFT_SHCP"/>
+               <pin_label pin_num="R9" pin_signal="SNVS_TAMPER1" label="SW2_KEY" identifier="BT_DISABLE"/>
+               <pin_label pin_num="F3" pin_signal="CSI_HSYNC" label="LED_G" identifier="CSI_HSYNC"/>
+               <pin_label pin_num="F2" pin_signal="CSI_VSYNC" label="LED_B" identifier="CSI_VSYNC"/>
+               <pin_label pin_num="M16" pin_signal="GPIO1_IO04" label="LED_R" identifier="USB_OTG1_PWR"/>
+               <pin_label pin_num="N9" pin_signal="SNVS_TAMPER8" label="GPIO_SPI4_MISO" identifier="SHIFT_nOE"/>
+               <pin_label pin_num="N10" pin_signal="SNVS_TAMPER7" label="GPIO_SPI4_CS" identifier="SHIFT_STCP"/>
+               <pin_label pin_num="E9" pin_signal="LCD_RESET" label="GTP_RESET"/>
+               <pin_label pin_num="R6" pin_signal="SNVS_TAMPER9" label="GTP_INT"/>
+               <pin_label pin_num="R10" pin_signal="SNVS_TAMPER0" label="MPU6050_INT"/>
+               <pin_label pin_num="L14" pin_signal="GPIO1_IO02" label="ONEWIRE" identifier="ONEWIRE"/>
+               <pin_label pin_num="P11" pin_signal="SNVS_TAMPER2" label="AP3216_INT"/>
+               <pin_label pin_num="P8" pin_signal="POR_B" label="SW1_RESET"/>
+               <pin_label pin_num="R8" pin_signal="ONOFF" label="SW3_ONOFF"/>
+               <pin_label pin_num="J14" pin_signal="UART1_RTS_B" label="SD卡软件没有使用这引脚"/>
+               <pin_label pin_num="P10" pin_signal="SNVS_TAMPER3" label="CPU_LED" identifier="CPU_LED"/>
+            </pin_labels>
+         </pins_profile>
+         <functions_list>
+            <function name="core_usdc_emmc">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="uSDHC2" description="外设 uSDHC2 未被初始化" problem_level="1" source="Pins: core_usdc_emmc">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="uSDHC2" signal="usdhc_clk" pin_num="D8" pin_signal="NAND_RE_B"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_cmd" pin_num="C8" pin_signal="NAND_WE_B"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 0" pin_num="D7" pin_signal="NAND_DATA00"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 1" pin_num="B7" pin_signal="NAND_DATA01"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 2" pin_num="A7" pin_signal="NAND_DATA02"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 3" pin_num="D6" pin_signal="NAND_DATA03"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 4" pin_num="C6" pin_signal="NAND_DATA04"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 5" pin_num="B6" pin_signal="NAND_DATA05"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 6" pin_num="A6" pin_signal="NAND_DATA06"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_data, 7" pin_num="A5" pin_signal="NAND_DATA07"/>
+                  <pin peripheral="uSDHC2" signal="usdhc_reset_b" pin_num="B4" pin_signal="NAND_ALE"/>
+               </pins>
+            </function>
+            <function name="core_mmdc_ddr">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="MMDC" description="外设 MMDC 未被初始化" problem_level="1" source="Pins: core_mmdc_ddr">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 0" pin_num="L5" pin_signal="DRAM_ADDR00"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 1" pin_num="H2" pin_signal="DRAM_ADDR01"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 2" pin_num="K1" pin_signal="DRAM_ADDR02"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 3" pin_num="M2" pin_signal="DRAM_ADDR03"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 4" pin_num="K4" pin_signal="DRAM_ADDR04"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 5" pin_num="L1" pin_signal="DRAM_ADDR05"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 6" pin_num="G2" pin_signal="DRAM_ADDR06"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 7" pin_num="H4" pin_signal="DRAM_ADDR07"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 8" pin_num="J4" pin_signal="DRAM_ADDR08"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 9" pin_num="L2" pin_signal="DRAM_ADDR09"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 10" pin_num="M4" pin_signal="DRAM_ADDR10"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 11" pin_num="K3" pin_signal="DRAM_ADDR11"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 12" pin_num="L4" pin_signal="DRAM_ADDR12"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 13" pin_num="H3" pin_signal="DRAM_ADDR13"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 14" pin_num="G1" pin_signal="DRAM_ADDR14"/>
+                  <pin peripheral="MMDC" signal="mmdc_addr, 15" pin_num="K5" pin_signal="DRAM_ADDR15"/>
+                  <pin peripheral="MMDC" signal="mmdc_cas_b" pin_num="J2" pin_signal="DRAM_CAS_B"/>
+                  <pin peripheral="MMDC" signal="mmdc_cs0_b" pin_num="N2" pin_signal="DRAM_CS0_B"/>
+                  <pin peripheral="MMDC" signal="mmdc_cs1_b" pin_num="H5" pin_signal="DRAM_CS1_B"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 0" pin_num="T4" pin_signal="DRAM_DATA00"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 1" pin_num="U6" pin_signal="DRAM_DATA01"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 2" pin_num="T6" pin_signal="DRAM_DATA02"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 3" pin_num="U7" pin_signal="DRAM_DATA03"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 4" pin_num="U8" pin_signal="DRAM_DATA04"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 5" pin_num="T8" pin_signal="DRAM_DATA05"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 6" pin_num="T5" pin_signal="DRAM_DATA06"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 7" pin_num="U4" pin_signal="DRAM_DATA07"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 8" pin_num="U2" pin_signal="DRAM_DATA08"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 9" pin_num="U3" pin_signal="DRAM_DATA09"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 10" pin_num="U5" pin_signal="DRAM_DATA10"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 11" pin_num="R4" pin_signal="DRAM_DATA11"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 12" pin_num="P5" pin_signal="DRAM_DATA12"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 13" pin_num="P3" pin_signal="DRAM_DATA13"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 14" pin_num="R2" pin_signal="DRAM_DATA14"/>
+                  <pin peripheral="MMDC" signal="mmdc_data, 15" pin_num="R1" pin_signal="DRAM_DATA15"/>
+                  <pin peripheral="MMDC" signal="mmdc_dqm, 0" pin_num="T7" pin_signal="DRAM_DQM0"/>
+                  <pin peripheral="MMDC" signal="mmdc_dqm, 1" pin_num="T3" pin_signal="DRAM_DQM1"/>
+                  <pin peripheral="MMDC" signal="mmdc_odt, 0" pin_num="N1" pin_signal="DRAM_ODT0"/>
+                  <pin peripheral="MMDC" signal="mmdc_odt, 1" pin_num="F1" pin_signal="DRAM_ODT1"/>
+                  <pin peripheral="MMDC" signal="mmdc_ras_b" pin_num="M5" pin_signal="DRAM_RAS_B"/>
+                  <pin peripheral="MMDC" signal="mmdc_reset" pin_num="G4" pin_signal="DRAM_RESET"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdba, 0" pin_num="M1" pin_signal="DRAM_SDBA0"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdba, 1" pin_num="H1" pin_signal="DRAM_SDBA1"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdba, 2" pin_num="K2" pin_signal="DRAM_SDBA2"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdcke, 0" pin_num="M3" pin_signal="DRAM_SDCKE0"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdcke, 1" pin_num="J3" pin_signal="DRAM_SDCKE1"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdclk0_p" pin_num="P1" pin_signal="DRAM_SDCLK0_P"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdqs0_p" pin_num="P6" pin_signal="DRAM_SDQS0_P"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdqs1_p" pin_num="T1" pin_signal="DRAM_SDQS1_P"/>
+                  <pin peripheral="MMDC" signal="mmdc_sdwe_b" pin_num="J1" pin_signal="DRAM_SDWE_B"/>
+               </pins>
+            </function>
+            <function name="core_gpmi_nand">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="RAWNAND" description="外设 RAWNAND 未被初始化" problem_level="1" source="Pins: core_gpmi_nand">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="RAWNAND" signal="rawnand_ale" pin_num="B4" pin_signal="NAND_ALE"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_ce0_b" pin_num="C5" pin_signal="NAND_CE0_B"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_ce1_b" pin_num="B5" pin_signal="NAND_CE1_B"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_cle" pin_num="A4" pin_signal="NAND_CLE"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 00" pin_num="D7" pin_signal="NAND_DATA00"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 01" pin_num="B7" pin_signal="NAND_DATA01"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 02" pin_num="A7" pin_signal="NAND_DATA02"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 03" pin_num="D6" pin_signal="NAND_DATA03"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 04" pin_num="C6" pin_signal="NAND_DATA04"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 05" pin_num="B6" pin_signal="NAND_DATA05"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 06" pin_num="A6" pin_signal="NAND_DATA06"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_data, 07" pin_num="A5" pin_signal="NAND_DATA07"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_dqs" pin_num="E6" pin_signal="NAND_DQS"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_re_b" pin_num="D8" pin_signal="NAND_RE_B"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_ready_b" pin_num="A3" pin_signal="NAND_READY_B"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_we_b" pin_num="C8" pin_signal="NAND_WE_B"/>
+                  <pin peripheral="RAWNAND" signal="rawnand_wp_b" pin_num="D5" pin_signal="NAND_WP_B"/>
+               </pins>
+            </function>
+            <function name="mini_uart1_debug">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART1" description="外设 UART1 未被初始化" problem_level="1" source="Pins: mini_uart1_debug">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART1" signal="uart_rx" pin_num="K16" pin_signal="UART1_RX_DATA"/>
+                  <pin peripheral="UART1" signal="uart_tx" pin_num="K14" pin_signal="UART1_TX_DATA"/>
+               </pins>
+            </function>
+            <function name="mini_enet_mdc">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ENET1" description="外设 ENET1 未被初始化" problem_level="1" source="Pins: mini_enet_mdc">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ENET1" signal="enet_mdc" pin_num="L16" pin_signal="GPIO1_IO07"/>
+                  <pin peripheral="ENET1" signal="enet_mdio" pin_num="K17" pin_signal="GPIO1_IO06"/>
+               </pins>
+            </function>
+            <function name="mini_enet1_r_enet">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ENET1" description="外设 ENET1 未被初始化" problem_level="1" source="Pins: mini_enet1_r_enet">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ENET1" signal="enet_rdata, 0" pin_num="F16" pin_signal="ENET1_RX_DATA0"/>
+                  <pin peripheral="ENET1" signal="enet_rdata, 1" pin_num="E17" pin_signal="ENET1_RX_DATA1"/>
+                  <pin peripheral="ENET1" signal="enet_rx_en" pin_num="E16" pin_signal="ENET1_RX_EN"/>
+                  <pin peripheral="ENET1" signal="enet_rx_er" pin_num="D15" pin_signal="ENET1_RX_ER"/>
+                  <pin peripheral="ENET1" signal="enet_tdata, 0" pin_num="E15" pin_signal="ENET1_TX_DATA0"/>
+                  <pin peripheral="ENET1" signal="enet_tdata, 1" pin_num="E14" pin_signal="ENET1_TX_DATA1"/>
+                  <pin peripheral="ENET1" signal="enet_tx_clk" pin_num="F14" pin_signal="ENET1_TX_CLK"/>
+                  <pin peripheral="ENET1" signal="enet_tx_en" pin_num="F15" pin_signal="ENET1_TX_EN"/>
+               </pins>
+            </function>
+            <function name="mini_enet2_r_enet">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ENET2" description="外设 ENET2 未被初始化" problem_level="1" source="Pins: mini_enet2_r_enet">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ENET2" signal="enet_rdata, 0" pin_num="C17" pin_signal="ENET2_RX_DATA0"/>
+                  <pin peripheral="ENET2" signal="enet_rdata, 1" pin_num="C16" pin_signal="ENET2_RX_DATA1"/>
+                  <pin peripheral="ENET2" signal="enet_rx_en" pin_num="B17" pin_signal="ENET2_RX_EN"/>
+                  <pin peripheral="ENET2" signal="enet_rx_er" pin_num="D16" pin_signal="ENET2_RX_ER"/>
+                  <pin peripheral="ENET2" signal="enet_tdata, 0" pin_num="A15" pin_signal="ENET2_TX_DATA0"/>
+                  <pin peripheral="ENET2" signal="enet_tdata, 1" pin_num="A16" pin_signal="ENET2_TX_DATA1"/>
+                  <pin peripheral="ENET2" signal="enet_tx_clk" pin_num="D17" pin_signal="ENET2_TX_CLK"/>
+                  <pin peripheral="ENET2" signal="enet_tx_en" pin_num="B15" pin_signal="ENET2_TX_EN"/>
+               </pins>
+            </function>
+            <function name="mini_gpio_cpu_user_led">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="GPIO5" description="外设 GPIO5 未被初始化" problem_level="1" source="Pins: mini_gpio_cpu_user_led">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="GPIO5" signal="gpio_io, 3" pin_num="P10" pin_signal="SNVS_TAMPER3">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+            <function name="mini_gpio_rgb_led">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="GPIO4" description="外设 GPIO4 未被初始化" problem_level="1" source="Pins: mini_gpio_rgb_led">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIO1" description="外设 GPIO1 未被初始化" problem_level="1" source="Pins: mini_gpio_rgb_led">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="GPIO1" signal="gpio_io, 4" pin_num="M16" pin_signal="GPIO1_IO04">
+                     <pin_features>
+                        <pin_feature name="ODE" value="ENABLED"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIO4" signal="gpio_io, 19" pin_num="F2" pin_signal="CSI_VSYNC"/>
+                  <pin peripheral="GPIO4" signal="gpio_io, 20" pin_num="F3" pin_signal="CSI_HSYNC"/>
+               </pins>
+            </function>
+            <function name="mini_gpio_src_key">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SRC" description="外设 SRC 未被初始化" problem_level="1" source="Pins: mini_gpio_src_key">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIO5" description="外设 GPIO5 未被初始化" problem_level="1" source="Pins: mini_gpio_src_key">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SRC" signal="src_por_b" pin_num="P8" pin_signal="POR_B"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 1" pin_num="R9" pin_signal="SNVS_TAMPER1"/>
+                  <pin peripheral="SRC" signal="src_reset_b" pin_num="R8" pin_signal="ONOFF"/>
+                  <pin peripheral="SRC" signal="src_boot_mode, 1" pin_num="U10" pin_signal="BOOT_MODE1"/>
+               </pins>
+            </function>
+            <function name="mini_spi_gpio_74hc595">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="GPIO5" description="外设 GPIO5 未被初始化" problem_level="1" source="Pins: mini_spi_gpio_74hc595">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="GPIO5" signal="gpio_io, 7" pin_num="N10" pin_signal="SNVS_TAMPER7"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 8" pin_num="N9" pin_signal="SNVS_TAMPER8"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 10" pin_num="T10" pin_signal="BOOT_MODE0"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 11" pin_num="U10" pin_signal="BOOT_MODE1">
+                     <pin_features>
+                        <pin_feature name="identifier" value="BOOT_MODE1"/>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+            <function name="mini_i2c1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="I2C1" description="外设 I2C1 未被初始化" problem_level="1" source="Pins: mini_i2c1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="I2C1" signal="i2c_scl" pin_num="G17" pin_signal="UART4_TX_DATA"/>
+                  <pin peripheral="I2C1" signal="i2c_sda" pin_num="G16" pin_signal="UART4_RX_DATA"/>
+               </pins>
+            </function>
+            <function name="mini_cap_screen_r_i2c1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="GPIO3" description="外设 GPIO3 未被初始化" problem_level="1" source="Pins: mini_cap_screen_r_i2c1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIO5" description="外设 GPIO5 未被初始化" problem_level="1" source="Pins: mini_cap_screen_r_i2c1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="GPIO3" signal="gpio_io, 4" pin_num="E9" pin_signal="LCD_RESET"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 9" pin_num="R6" pin_signal="SNVS_TAMPER9"/>
+               </pins>
+            </function>
+            <function name="mini_lcdif_rgb888">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="LCDIF" description="外设 LCDIF 未被初始化" problem_level="1" source="Pins: mini_lcdif_rgb888">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="PWM1" description="外设 PWM1 未被初始化" problem_level="1" source="Pins: mini_lcdif_rgb888">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="LCDIF" signal="lcdif_clk" pin_num="A8" pin_signal="LCD_CLK"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 0" pin_num="B9" pin_signal="LCD_DATA00"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 1" pin_num="A9" pin_signal="LCD_DATA01"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 2" pin_num="E10" pin_signal="LCD_DATA02"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 3" pin_num="D10" pin_signal="LCD_DATA03"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 4" pin_num="C10" pin_signal="LCD_DATA04"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 5" pin_num="B10" pin_signal="LCD_DATA05"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 6" pin_num="A10" pin_signal="LCD_DATA06"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 7" pin_num="D11" pin_signal="LCD_DATA07"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 8" pin_num="B11" pin_signal="LCD_DATA08"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 9" pin_num="A11" pin_signal="LCD_DATA09"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 10" pin_num="E12" pin_signal="LCD_DATA10"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 11" pin_num="D12" pin_signal="LCD_DATA11"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 12" pin_num="C12" pin_signal="LCD_DATA12"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 13" pin_num="B12" pin_signal="LCD_DATA13"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 14" pin_num="A12" pin_signal="LCD_DATA14"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 15" pin_num="D13" pin_signal="LCD_DATA15"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 16" pin_num="C13" pin_signal="LCD_DATA16"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 17" pin_num="B13" pin_signal="LCD_DATA17"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 18" pin_num="A13" pin_signal="LCD_DATA18"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 19" pin_num="D14" pin_signal="LCD_DATA19"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 20" pin_num="C14" pin_signal="LCD_DATA20"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 21" pin_num="B14" pin_signal="LCD_DATA21"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 22" pin_num="A14" pin_signal="LCD_DATA22"/>
+                  <pin peripheral="LCDIF" signal="lcdif_data, 23" pin_num="B16" pin_signal="LCD_DATA23"/>
+                  <pin peripheral="LCDIF" signal="lcdif_enable" pin_num="B8" pin_signal="LCD_ENABLE"/>
+                  <pin peripheral="LCDIF" signal="lcdif_hsync" pin_num="D9" pin_signal="LCD_HSYNC"/>
+                  <pin peripheral="LCDIF" signal="lcdif_vsync" pin_num="C9" pin_signal="LCD_VSYNC"/>
+                  <pin peripheral="PWM1" signal="pwm_out" pin_num="N17" pin_signal="GPIO1_IO08"/>
+               </pins>
+            </function>
+            <function name="mini_snvs">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SNVS" description="外设 SNVS 未被初始化" problem_level="1" source="Pins: mini_snvs">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SNVS" signal="snvs_pmic_on_req" pin_num="T9" pin_signal="SNVS_PMIC_ON_REQ"/>
+               </pins>
+            </function>
+            <function name="mini_sdcard">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="uSDHC1" description="外设 uSDHC1 未被初始化" problem_level="1" source="Pins: mini_sdcard">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="uSDHC1" signal="usdhc_cd_b" pin_num="J14" pin_signal="UART1_RTS_B"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_clk" pin_num="C1" pin_signal="SD1_CLK"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_cmd" pin_num="C2" pin_signal="SD1_CMD"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 0" pin_num="B3" pin_signal="SD1_DATA0"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 1" pin_num="B2" pin_signal="SD1_DATA1"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 2" pin_num="B1" pin_signal="SD1_DATA2"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 3" pin_num="A2" pin_signal="SD1_DATA3"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_vselect" pin_num="M17" pin_signal="GPIO1_IO05"/>
+               </pins>
+            </function>
+            <function name="mini_usb_otg">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="USB1" description="外设 USB1 未被初始化" problem_level="1" source="Pins: mini_usb_otg">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="USB1" signal="usb_otg1_id" pin_num="K13" pin_signal="GPIO1_IO00"/>
+               </pins>
+            </function>
+            <function name="pro_uart2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART2" description="外设 UART2 未被初始化" problem_level="1" source="Pins: pro_uart2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART2" signal="uart_rx" pin_num="J16" pin_signal="UART2_RX_DATA"/>
+                  <pin peripheral="UART2" signal="uart_tx" pin_num="J17" pin_signal="UART2_TX_DATA"/>
+               </pins>
+            </function>
+            <function name="pro_uart3">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART3" description="外设 UART3 未被初始化" problem_level="1" source="Pins: pro_uart3">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART3" signal="uart_rx" pin_num="H16" pin_signal="UART3_RX_DATA"/>
+                  <pin peripheral="UART3" signal="uart_tx" pin_num="H17" pin_signal="UART3_TX_DATA"/>
+               </pins>
+            </function>
+            <function name="pro_flexcan1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="FLEXCAN1" description="外设 FLEXCAN1 未被初始化" problem_level="1" source="Pins: pro_flexcan1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="FLEXCAN1" signal="can_rx" pin_num="G14" pin_signal="UART3_RTS_B"/>
+                  <pin peripheral="FLEXCAN1" signal="can_tx" pin_num="H15" pin_signal="UART3_CTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_flexcan2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="FLEXCAN2" description="外设 FLEXCAN2 未被初始化" problem_level="1" source="Pins: pro_flexcan2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="FLEXCAN2" signal="can_rx" pin_num="H14" pin_signal="UART2_RTS_B"/>
+                  <pin peripheral="FLEXCAN2" signal="can_tx" pin_num="J15" pin_signal="UART2_CTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_rs485_1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART2" description="外设 UART2 未被初始化" problem_level="1" source="Pins: pro_rs485_1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIO1" description="外设 GPIO1 未被初始化" problem_level="1" source="Pins: pro_rs485_1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART2" signal="uart_rx" pin_num="J16" pin_signal="UART2_RX_DATA"/>
+                  <pin peripheral="UART2" signal="uart_tx" pin_num="J17" pin_signal="UART2_TX_DATA"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 22" pin_num="J15" pin_signal="UART2_CTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_rs485_2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART3" description="外设 UART3 未被初始化" problem_level="1" source="Pins: pro_rs485_2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIO1" description="外设 GPIO1 未被初始化" problem_level="1" source="Pins: pro_rs485_2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART3" signal="uart_rx" pin_num="H16" pin_signal="UART3_RX_DATA"/>
+                  <pin peripheral="UART3" signal="uart_tx" pin_num="H17" pin_signal="UART3_TX_DATA"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 23" pin_num="H14" pin_signal="UART2_RTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_i2c2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="I2C2" description="外设 I2C2 未被初始化" problem_level="1" source="Pins: pro_i2c2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="I2C2" signal="i2c_scl" pin_num="F17" pin_signal="UART5_TX_DATA"/>
+                  <pin peripheral="I2C2" signal="i2c_sda" pin_num="G13" pin_signal="UART5_RX_DATA"/>
+               </pins>
+            </function>
+            <function name="pro_mpu6050_r_i2c1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SNVS" description="外设 SNVS 未被初始化" problem_level="1" source="Pins: pro_mpu6050_r_i2c1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SNVS" signal="snvs_tamper, 0" pin_num="R10" pin_signal="SNVS_TAMPER0"/>
+               </pins>
+            </function>
+            <function name="pro_onewire">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="GPIO1" description="外设 GPIO1 未被初始化" problem_level="1" source="Pins: pro_onewire">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="GPIO1" signal="gpio_io, 2" pin_num="L14" pin_signal="GPIO1_IO02">
+                     <pin_features>
+                        <pin_feature name="ODE" value="ENABLED"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+            <function name="pro_adc">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ADC1" description="外设 ADC1 未被初始化" problem_level="1" source="Pins: pro_adc">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ADC1" signal="adc_in3" pin_num="L17" pin_signal="GPIO1_IO03"/>
+               </pins>
+            </function>
+            <function name="pro_beep">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="GPIO1" description="外设 GPIO1 未被初始化" problem_level="1" source="Pins: pro_beep">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="GPIO1" signal="gpio_io, 19" pin_num="J14" pin_signal="UART1_RTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_csi_camera_r_i2c2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="CSI" description="外设 CSI 未被初始化" problem_level="1" source="Pins: pro_csi_camera_r_i2c2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="CSI" signal="csi_data, 2" pin_num="E4" pin_signal="CSI_DATA00"/>
+                  <pin peripheral="CSI" signal="csi_data, 3" pin_num="E3" pin_signal="CSI_DATA01"/>
+                  <pin peripheral="CSI" signal="csi_data, 4" pin_num="E2" pin_signal="CSI_DATA02"/>
+                  <pin peripheral="CSI" signal="csi_data, 5" pin_num="E1" pin_signal="CSI_DATA03"/>
+                  <pin peripheral="CSI" signal="csi_data, 6" pin_num="D4" pin_signal="CSI_DATA04"/>
+                  <pin peripheral="CSI" signal="csi_data, 7" pin_num="D3" pin_signal="CSI_DATA05"/>
+                  <pin peripheral="CSI" signal="csi_data, 8" pin_num="D2" pin_signal="CSI_DATA06"/>
+                  <pin peripheral="CSI" signal="csi_data, 9" pin_num="D1" pin_signal="CSI_DATA07"/>
+                  <pin peripheral="CSI" signal="csi_hsync" pin_num="F3" pin_signal="CSI_HSYNC"/>
+                  <pin peripheral="CSI" signal="csi_vsync" pin_num="F2" pin_signal="CSI_VSYNC"/>
+                  <pin peripheral="CSI" signal="csi_mclk" pin_num="F5" pin_signal="CSI_MCLK"/>
+                  <pin peripheral="CSI" signal="csi_pixclk" pin_num="E5" pin_signal="CSI_PIXCLK"/>
+               </pins>
+            </function>
+            <function name="pro_sai_wm8960_r_i2c2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SAI2" description="外设 SAI2 未被初始化" problem_level="1" source="Pins: pro_sai_wm8960_r_i2c2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SAI2" signal="sai_mclk" pin_num="P14" pin_signal="JTAG_TMS"/>
+                  <pin peripheral="SAI2" signal="sai_tx_sync" pin_num="N15" pin_signal="JTAG_TDO"/>
+                  <pin peripheral="SAI2" signal="sai_tx_data" pin_num="N14" pin_signal="JTAG_TRST_B"/>
+                  <pin peripheral="SAI2" signal="sai_rx_data" pin_num="M14" pin_signal="JTAG_TCK"/>
+               </pins>
+            </function>
+            <function name="pro_hdmi_r_i2c2_74hc595_spdif">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies/>
+               <pins/>
+            </function>
+            <function name="pro_ap3216_r_i2c1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SNVS" description="外设 SNVS 未被初始化" problem_level="1" source="Pins: pro_ap3216_r_i2c1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SNVS" signal="snvs_tamper, 2" pin_num="P11" pin_signal="SNVS_TAMPER2"/>
+               </pins>
+            </function>
+            <function name="pro_spdif">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SPDIF" description="外设 SPDIF 未被初始化" problem_level="1" source="Pins: pro_spdif">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SPDIF" signal="spdif_in" pin_num="M15" pin_signal="GPIO1_IO09"/>
+                  <pin peripheral="SPDIF" signal="spdif_out" pin_num="P15" pin_signal="JTAG_MOD"/>
+               </pins>
+            </function>
+            <function name="extra_res_screen">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ADC1" description="外设 ADC1 未被初始化" problem_level="1" source="Pins: extra_res_screen">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ADC1" signal="adc_in1" pin_num="L15" pin_signal="GPIO1_IO01"/>
+                  <pin peripheral="ADC1" signal="adc_in2" pin_num="L14" pin_signal="GPIO1_IO02"/>
+                  <pin peripheral="ADC1" signal="adc_in3" pin_num="L17" pin_signal="GPIO1_IO03"/>
+                  <pin peripheral="ADC1" signal="adc_in4" pin_num="M16" pin_signal="GPIO1_IO04"/>
+               </pins>
+            </function>
+            <function name="extra_ecspi3">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ECSPI3" description="外设 ECSPI3 未被初始化" problem_level="1" source="Pins: extra_ecspi3">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ECSPI3" signal="ecspi_ss, 0" pin_num="J17" pin_signal="UART2_TX_DATA"/>
+                  <pin peripheral="ECSPI3" signal="ecspi_sclk" pin_num="J16" pin_signal="UART2_RX_DATA"/>
+                  <pin peripheral="ECSPI3" signal="ecspi_mosi" pin_num="J15" pin_signal="UART2_CTS_B"/>
+                  <pin peripheral="ECSPI3" signal="ecspi_miso" pin_num="H14" pin_signal="UART2_RTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_bluetooth_r_wifi_74hc595">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART2" description="外设 UART2 未被初始化" problem_level="1" source="Pins: pro_bluetooth_r_wifi_74hc595">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART2" signal="uart_rx" pin_num="J16" pin_signal="UART2_RX_DATA"/>
+                  <pin peripheral="UART2" signal="uart_tx" pin_num="J17" pin_signal="UART2_TX_DATA"/>
+                  <pin peripheral="UART2" signal="uart_cts_b" pin_num="J15" pin_signal="UART2_CTS_B"/>
+                  <pin peripheral="UART2" signal="uart_rts_b" pin_num="H14" pin_signal="UART2_RTS_B"/>
+               </pins>
+            </function>
+            <function name="pro_wifi_ap6236_r_74hc595">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SPDIF" description="外设 SPDIF 未被初始化" problem_level="1" source="Pins: pro_wifi_ap6236_r_74hc595">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="uSDHC1" description="外设 uSDHC1 未被初始化" problem_level="1" source="Pins: pro_wifi_ap6236_r_74hc595">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIO1" description="外设 GPIO1 未被初始化" problem_level="1" source="Pins: pro_wifi_ap6236_r_74hc595">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="uSDHC1" signal="usdhc_clk" pin_num="C1" pin_signal="SD1_CLK"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_cmd" pin_num="C2" pin_signal="SD1_CMD"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 0" pin_num="B3" pin_signal="SD1_DATA0"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 1" pin_num="B2" pin_signal="SD1_DATA1"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 2" pin_num="B1" pin_signal="SD1_DATA2"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_data, 3" pin_num="A2" pin_signal="SD1_DATA3"/>
+                  <pin peripheral="uSDHC1" signal="usdhc_vselect" pin_num="M17" pin_signal="GPIO1_IO05"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 1" pin_num="L15" pin_signal="GPIO1_IO01"/>
+                  <pin peripheral="SPDIF" signal="spdif_out" pin_num="P15" pin_signal="JTAG_MOD"/>
+               </pins>
+            </function>
+            <function name="extra_i2c3">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="I2C3" description="外设 I2C3 未被初始化" problem_level="1" source="Pins: extra_i2c3">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="I2C3" signal="i2c_scl" pin_num="A9" pin_signal="LCD_DATA01"/>
+                  <pin peripheral="I2C3" signal="i2c_sda" pin_num="B9" pin_signal="LCD_DATA00"/>
+               </pins>
+            </function>
+            <function name="extra_i2c4">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="I2C4" description="外设 I2C4 未被初始化" problem_level="1" source="Pins: extra_i2c4">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="I2C4" signal="i2c_scl" pin_num="D10" pin_signal="LCD_DATA03"/>
+                  <pin peripheral="I2C4" signal="i2c_sda" pin_num="E10" pin_signal="LCD_DATA02"/>
+               </pins>
+            </function>
+            <function name="extra_uart4">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART4" description="外设 UART4 未被初始化" problem_level="1" source="Pins: extra_uart4">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART4" signal="uart_rx" pin_num="G16" pin_signal="UART4_RX_DATA"/>
+                  <pin peripheral="UART4" signal="uart_tx" pin_num="G17" pin_signal="UART4_TX_DATA"/>
+               </pins>
+            </function>
+            <function name="extra_uart5">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART5" description="外设 UART5 未被初始化" problem_level="1" source="Pins: extra_uart5">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART5" signal="uart_rx" pin_num="E4" pin_signal="CSI_DATA00"/>
+                  <pin peripheral="UART5" signal="uart_tx" pin_num="E3" pin_signal="CSI_DATA01"/>
+               </pins>
+            </function>
+            <function name="extra_uart6">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART6" description="外设 UART6 未被初始化" problem_level="1" source="Pins: extra_uart6">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART6" signal="uart_rx" pin_num="F5" pin_signal="CSI_MCLK"/>
+                  <pin peripheral="UART6" signal="uart_tx" pin_num="E5" pin_signal="CSI_PIXCLK"/>
+               </pins>
+            </function>
+            <function name="extra_uart7">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART7" description="外设 UART7 未被初始化" problem_level="1" source="Pins: extra_uart7">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART7" signal="uart_rx" pin_num="C13" pin_signal="LCD_DATA16"/>
+                  <pin peripheral="UART7" signal="uart_tx" pin_num="B13" pin_signal="LCD_DATA17"/>
+               </pins>
+            </function>
+            <function name="extra_uart8">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="UART8" description="外设 UART8 未被初始化" problem_level="1" source="Pins: extra_uart8">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="UART8" signal="uart_rx" pin_num="C14" pin_signal="LCD_DATA20"/>
+                  <pin peripheral="UART8" signal="uart_tx" pin_num="B14" pin_signal="LCD_DATA21"/>
+               </pins>
+            </function>
+            <function name="extra_ecspi2">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ECSPI2" description="外设 ECSPI2 未被初始化" problem_level="1" source="Pins: extra_ecspi2">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ECSPI2" signal="ecspi_ss, 0" pin_num="E3" pin_signal="CSI_DATA01"/>
+                  <pin peripheral="ECSPI2" signal="ecspi_sclk" pin_num="E4" pin_signal="CSI_DATA00"/>
+                  <pin peripheral="ECSPI2" signal="ecspi_mosi" pin_num="E2" pin_signal="CSI_DATA02"/>
+                  <pin peripheral="ECSPI2" signal="ecspi_miso" pin_num="E1" pin_signal="CSI_DATA03"/>
+               </pins>
+            </function>
+            <function name="extra_ecspi1">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ECSPI1" description="外设 ECSPI1 未被初始化" problem_level="1" source="Pins: extra_ecspi1">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ECSPI1" signal="ecspi_ss, 0" pin_num="D3" pin_signal="CSI_DATA05"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_miso" pin_num="D1" pin_signal="CSI_DATA07"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_mosi" pin_num="D2" pin_signal="CSI_DATA06"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_sclk" pin_num="D4" pin_signal="CSI_DATA04"/>
+               </pins>
+            </function>
+            <function name="extra_ecspi4">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="ECSPI4" description="外设 ECSPI4 未被初始化" problem_level="1" source="Pins: extra_ecspi4">
+                     <feature name="initialized" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="ECSPI4" signal="ecspi_ss, 0" pin_num="D16" pin_signal="ENET2_RX_ER"/>
+                  <pin peripheral="ECSPI4" signal="ecspi_sclk" pin_num="A16" pin_signal="ENET2_TX_DATA1"/>
+                  <pin peripheral="ECSPI4" signal="ecspi_mosi" pin_num="B15" pin_signal="ENET2_TX_EN"/>
+                  <pin peripheral="ECSPI4" signal="ecspi_miso" pin_num="D17" pin_signal="ENET2_TX_CLK"/>
+               </pins>
+            </function>
+            <function name="extra_test">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies/>
+               <pins/>
+            </function>
+         </functions_list>
+      </pins>
+      <common name="common" version="1.0" update_project_code="true">
+         <core name="ca7" role="primary" project_name="Project"/>
+      </common>
+   </tools>
+</configuration>
