@@ -16,7 +16,6 @@ EBF6ULL 核心板硬件手册
 内容            下载链接
 ============  ====================
 参考设计       :download:`[应用文档]野火i.MX 6ULL 核心板底板电源参考设计.pdf <../../hardware/[应用文档]野火i.MX 6ULL 核心板底板电源参考设计.pdf>`
-引脚分配表     :download:`野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx <../../hardware/野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx>`
 硬件原理图     :download:`野火_EBF6ULL S1 邮票孔核心板_V1.0_原理图.pdf <../../hardware/EBF6ULL S1/野火_EBF6ULL S1 邮票孔核心板_V1.0_原理图.pdf>`
 机械尺寸图     :download:`野火_EBF6ULL S1 邮票孔核心板_V1.0_机械尺寸.pdf <../../hardware/EBF6ULL S1/野火_EBF6ULL S1 邮票孔核心板_V1.0_机械尺寸.pdf>`
 装配图         :download:`野火_EBF6ULL S1 邮票孔核心板_V1.0_装配图.pdf <../../hardware/EBF6ULL S1/野火_EBF6ULL S1 邮票孔核心板_V1.0_装配图.pdf>`
