@@ -18,7 +18,7 @@
 
 .. toctree::
    :maxdepth: 1
-   :caption: 开发板数据手册
+   :caption: 开发板硬件
    :numbered:
 
    board/ebf6ull

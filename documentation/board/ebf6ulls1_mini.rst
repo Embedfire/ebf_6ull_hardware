@@ -1,7 +1,7 @@
 .. vim: syntax=rst
 
 
-EBF6ULL S1 mini底板数据手册
+EBF6ULL S1 mini底板硬件手册
 ==========================================
 
 可直接点击页面右上角的“Edit on github”到github下载整个仓库，仓库中包含以下所有硬件资料。
