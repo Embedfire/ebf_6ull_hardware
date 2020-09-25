@@ -7,7 +7,7 @@ EBF6ULL 开发板引脚分配说明
 
 为方便用户使用野火核心板进行二次开发，我们把野火开发板使用到的引脚已整理至资料excel表及i.MX Pins tool中。
 
-- :download:`野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx <../../hardware/野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx>`
+- :download:`野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx <../../hardware/EBF6ULL_PIN_TOOL/野火_EBF6ULL S1邮票孔核心板_V1.0引脚分配.xlsx>`
 - :download:`野火_EBF6ULL开发板Pin Tool引脚分配文件 EBF6ULL.mex <../../hardware/EBF6ULL_PIN_TOOL/EBF6ULL.mex>`
 
 其中excel表直接用excel打开查看即可，深度设计建议使用i.MX Pins tool工具配合 ``引脚配置文件EBF6ULL.mex`` 进行查看与调节。
