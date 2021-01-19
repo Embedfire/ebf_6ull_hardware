@@ -1,5 +1,25 @@
 {% extends "!layout.html" %}
 
+{% block htmltitle %}
+
+<link rel="shortcut icon" type="image/x-icon" href="{{ pathto("_static/images/logo.ico", 1) }}"/>
+
+<!--baidu analyse-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?a9602362d729d6d6a3e9119d85edc92e";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<!--google adsense-->
+<script data-ad-client="ca-pub-1786367574488074" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+{% endblock %}
+
 {%- block content %}
 <div class="rst-content style-external-links">
   {% include "breadcrumbs.html" %}
@@ -16,6 +36,15 @@
   </div>
   {%- endblock %}
   <footer>
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      {% if next %}
+        <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}" accesskey="n" rel="next">{{ _('Next') }} <span class="fa fa-arrow-circle-right"></span></a>
+      {% endif %}
+      {% if prev %}
+        <a href="{{ prev.link|e }}" class="btn btn-neutral float-left" title="{{ prev.title|striptags|e }}" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> {{ _('Previous') }}</a>
+      {% endif %}
+    </div>
+
     <hr/>
     <div role="contentinfo">
       <p>
